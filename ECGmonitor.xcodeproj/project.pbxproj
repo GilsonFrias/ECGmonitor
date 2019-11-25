@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C21A22602305773E006E34AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21A225F2305773E006E34AB /* AppDelegate.swift */; };
+		C21A22622305773E006E34AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21A22612305773E006E34AB /* ViewController.swift */; };
+		C21A22652305773E006E34AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21A22632305773E006E34AB /* Main.storyboard */; };
+		C21A226723057741006E34AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21A226623057741006E34AB /* Assets.xcassets */; };
+		C21A226A23057741006E34AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21A226823057741006E34AB /* LaunchScreen.storyboard */; };
+		C2B0546523215B5E008C5B13 /* QRSdetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0546423215B5D008C5B13 /* QRSdetector.swift */; };
+		D81D21AE233F778300CAD23D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81D21AD233F778300CAD23D /* Charts.framework */; };
+		D81D21AF233F778300CAD23D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D81D21AD233F778300CAD23D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D833AAF623843F4600F4BD30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833AAF523843F4600F4BD30 /* Constants.swift */; };
+		D833AAF823844E5700F4BD30 /* UIViewBGCextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833AAF723844E5700F4BD30 /* UIViewBGCextension.swift */; };
+		D833AAFA2387864C00F4BD30 /* styledTxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833AAF92387864C00F4BD30 /* styledTxt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8CF053823478BB3007BAF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C21A228D2306842A006E34AB /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		D8CF053A23478BB3007BAF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C21A228D2306842A006E34AB /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C21A229A2306843F006E34AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D81D21AF233F778300CAD23D /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C21A225C2305773E006E34AB /* ECGmonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECGmonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21A225F2305773E006E34AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C21A22612305773E006E34AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C21A22642305773E006E34AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C21A226623057741006E34AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C21A226923057741006E34AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C21A226B23057741006E34AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C21A228D2306842A006E34AB /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ECGmonitor/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		C2B0546423215B5D008C5B13 /* QRSdetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRSdetector.swift; path = ../../../QRSdetector.swift; sourceTree = "<group>"; };
+		D81D21AD233F778300CAD23D /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D833AAF523843F4600F4BD30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D833AAF723844E5700F4BD30 /* UIViewBGCextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewBGCextension.swift; sourceTree = "<group>"; };
+		D833AAF92387864C00F4BD30 /* styledTxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styledTxt.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C21A22592305773E006E34AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81D21AE233F778300CAD23D /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C21A22532305773E006E34AB = {
+			isa = PBXGroup;
+			children = (
+				C21A225E2305773E006E34AB /* ECGmonitor */,
+				C21A228D2306842A006E34AB /* Charts.xcodeproj */,
+				C21A225D2305773E006E34AB /* Products */,
+				D81D21AC233F778300CAD23D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C21A225D2305773E006E34AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21A225C2305773E006E34AB /* ECGmonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C21A225E2305773E006E34AB /* ECGmonitor */ = {
+			isa = PBXGroup;
+			children = (
+				C2B0546423215B5D008C5B13 /* QRSdetector.swift */,
+				C21A225F2305773E006E34AB /* AppDelegate.swift */,
+				C21A22612305773E006E34AB /* ViewController.swift */,
+				D833AAF92387864C00F4BD30 /* styledTxt.swift */,
+				D833AAF723844E5700F4BD30 /* UIViewBGCextension.swift */,
+				D833AAF523843F4600F4BD30 /* Constants.swift */,
+				C21A22632305773E006E34AB /* Main.storyboard */,
+				C21A226623057741006E34AB /* Assets.xcassets */,
+				C21A226823057741006E34AB /* LaunchScreen.storyboard */,
+				C21A226B23057741006E34AB /* Info.plist */,
+			);
+			path = ECGmonitor;
+			sourceTree = "<group>";
+		};
+		D81D21AC233F778300CAD23D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D81D21AD233F778300CAD23D /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8CF053423478BB0007BAF1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8CF053923478BB3007BAF1F /* Charts.framework */,
+				D8CF053B23478BB3007BAF1F /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C21A225B2305773E006E34AB /* ECGmonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21A226E23057741006E34AB /* Build configuration list for PBXNativeTarget "ECGmonitor" */;
+			buildPhases = (
+				C21A22582305773E006E34AB /* Sources */,
+				C21A22592305773E006E34AB /* Frameworks */,
+				C21A225A2305773E006E34AB /* Resources */,
+				C21A229A2306843F006E34AB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECGmonitor;
+			productName = ECGmonitor;
+			productReference = C21A225C2305773E006E34AB /* ECGmonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C21A22542305773E006E34AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Gilosn Frias ";
+				TargetAttributes = {
+					C21A225B2305773E006E34AB = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = C21A22572305773E006E34AB /* Build configuration list for PBXProject "ECGmonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C21A22532305773E006E34AB;
+			productRefGroup = C21A225D2305773E006E34AB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8CF053423478BB0007BAF1F /* Products */;
+					ProjectRef = C21A228D2306842A006E34AB /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C21A225B2305773E006E34AB /* ECGmonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D8CF053923478BB3007BAF1F /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D8CF053823478BB3007BAF1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8CF053B23478BB3007BAF1F /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = D8CF053A23478BB3007BAF1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C21A225A2305773E006E34AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21A226A23057741006E34AB /* LaunchScreen.storyboard in Resources */,
+				C21A226723057741006E34AB /* Assets.xcassets in Resources */,
+				C21A22652305773E006E34AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C21A22582305773E006E34AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D833AAF623843F4600F4BD30 /* Constants.swift in Sources */,
+				C21A22622305773E006E34AB /* ViewController.swift in Sources */,
+				C2B0546523215B5E008C5B13 /* QRSdetector.swift in Sources */,
+				D833AAF823844E5700F4BD30 /* UIViewBGCextension.swift in Sources */,
+				C21A22602305773E006E34AB /* AppDelegate.swift in Sources */,
+				D833AAFA2387864C00F4BD30 /* styledTxt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C21A22632305773E006E34AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21A22642305773E006E34AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C21A226823057741006E34AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21A226923057741006E34AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C21A226C23057741006E34AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C21A226D23057741006E34AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C21A226F23057741006E34AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6K3Y72477;
+				INFOPLIST_FILE = ECGmonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.ECGmonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C21A227023057741006E34AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6K3Y72477;
+				INFOPLIST_FILE = ECGmonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.ECGmonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C21A22572305773E006E34AB /* Build configuration list for PBXProject "ECGmonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21A226C23057741006E34AB /* Debug */,
+				C21A226D23057741006E34AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21A226E23057741006E34AB /* Build configuration list for PBXNativeTarget "ECGmonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21A226F23057741006E34AB /* Debug */,
+				C21A227023057741006E34AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C21A22542305773E006E34AB /* Project object */;
+}
