@@ -648,10 +648,6 @@ class ViewController:UIViewController, UIScrollViewDelegate,  CBCentralManagerDe
         
     }
     
-    func plot(inArray:[Double], label:String){
-        //CVlabel.text = label
-        //updateChart(chart: customPlotView, data: inArray, type: "Custom")
-    }
     
     //Disable landscape mode
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

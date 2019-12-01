@@ -1,9 +1,12 @@
 /*
 Based on the BLE libraries available on Espressif's github
 repository: https://github.com/espressif/arduino-esp32/tree/master/libraries/BLE
+More specifically, the BLE_server example by Neil Kolban and chegewara: https://github.com/espressif/arduino-esp32/blob/master/libraries/BLE/examples/BLE_server/BLE_server.ino
+and the BLE_notify example by Neil Kolban, Evandro Copercini and chegewara: https://github.com/espressif/arduino-esp32/blob/master/libraries/BLE/examples/BLE_notify/BLE_notify.ino
 */
 /*
-ECG samples are read from the device flash memory and then decompressed. Two samples are notified 330Hz
+ECG samples are read from the ESP32's flash memory and then decompressed and notified to the central BT device.
+Samples are streamed at around 330 Hz. 
 */
 
 #include "FS.h"
