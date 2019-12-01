@@ -3,13 +3,13 @@ ______
 Deployment of an Arduino-based emulated Electrocardiogram (ECG) sensor and an IOS application for real time ECG data visualization and processing. This could serve as the bare bones for your cool ECG measurement, transmission and processing applications!
 </div>
 
-## System overview
+## General system overview
 <div align="center">
     <!--img src="ecgMonitorFigs/schematic.png" width="427" height="280" -->
     <img src="ecgMonitorFigs/schematic.png" width="533" height="350">
 </div>
 
-## App UI
+## App UI and performance demo
 <div align="center">
     <!--img src="ecgMonitorFigs/screenshot.gif" width="400" height="400" /-->
     <img src="ecgMonitorFigs/screenshot.gif" width="600" height="600" />
@@ -33,7 +33,7 @@ ______
   - simd
 
 
-ECG records from the [MIT-BIH arrhythmia database](https://physionet.org/content/mitdb/1.0.0/) are used as the source of ECG data, and they are stored in the ESP32 on-board flash memory. In my testings I used the ESP32-WROOM-32D device with 4MB of flash memory. It was necessary to compress the ECG data to be able to fit it into the ESP32 device. A custom compression/decompression routine is used in the provided Python and Arduino sources to reduce the size of the ECG files to around 0.975 MB.  
+ECG records from the [MIT-BIH arrhythmia database](https://physionet.org/content/mitdb/1.0.0/) are used as the source of ECG data, and they are stored in the ESP32 on-board flash memory. In my testings I used the ESP32-WROOM-32D device with 4MB of flash memory. It was necessary to compress the ECG data to be able to fit it into the ESP32 device. A custom compression/decompression routine is used in the provided Python and Arduino sources to reduce the size of the 30 minutes ECG files to around 0.975 MB.  
 
 The Arduino sketch could be easily modified to enable ECG measurements with the ESP32 ADC converter or a more accurate one.
 

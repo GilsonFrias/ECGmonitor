@@ -12,9 +12,9 @@
 		C21A22652305773E006E34AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21A22632305773E006E34AB /* Main.storyboard */; };
 		C21A226723057741006E34AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21A226623057741006E34AB /* Assets.xcassets */; };
 		C21A226A23057741006E34AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21A226823057741006E34AB /* LaunchScreen.storyboard */; };
-		C2B0546523215B5E008C5B13 /* QRSdetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0546423215B5D008C5B13 /* QRSdetector.swift */; };
 		D81D21AE233F778300CAD23D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81D21AD233F778300CAD23D /* Charts.framework */; };
 		D81D21AF233F778300CAD23D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D81D21AD233F778300CAD23D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D81EC4D0239418190045FCEB /* QRSdetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EC4CF239418190045FCEB /* QRSdetector.swift */; };
 		D833AAF623843F4600F4BD30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833AAF523843F4600F4BD30 /* Constants.swift */; };
 		D833AAF823844E5700F4BD30 /* UIViewBGCextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833AAF723844E5700F4BD30 /* UIViewBGCextension.swift */; };
 		D833AAFA2387864C00F4BD30 /* styledTxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833AAF92387864C00F4BD30 /* styledTxt.swift */; };
@@ -60,8 +60,8 @@
 		C21A226923057741006E34AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C21A226B23057741006E34AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C21A228D2306842A006E34AB /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ECGmonitor/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
-		C2B0546423215B5D008C5B13 /* QRSdetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRSdetector.swift; path = ../../../QRSdetector.swift; sourceTree = "<group>"; };
 		D81D21AD233F778300CAD23D /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81EC4CF239418190045FCEB /* QRSdetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRSdetector.swift; sourceTree = "<group>"; };
 		D833AAF523843F4600F4BD30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D833AAF723844E5700F4BD30 /* UIViewBGCextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewBGCextension.swift; sourceTree = "<group>"; };
 		D833AAF92387864C00F4BD30 /* styledTxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styledTxt.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		C21A225E2305773E006E34AB /* ECGmonitor */ = {
 			isa = PBXGroup;
 			children = (
-				C2B0546423215B5D008C5B13 /* QRSdetector.swift */,
+				D81EC4CF239418190045FCEB /* QRSdetector.swift */,
 				C21A225F2305773E006E34AB /* AppDelegate.swift */,
 				C21A22612305773E006E34AB /* ViewController.swift */,
 				D833AAF92387864C00F4BD30 /* styledTxt.swift */,
@@ -228,9 +228,9 @@
 			files = (
 				D833AAF623843F4600F4BD30 /* Constants.swift in Sources */,
 				C21A22622305773E006E34AB /* ViewController.swift in Sources */,
-				C2B0546523215B5E008C5B13 /* QRSdetector.swift in Sources */,
 				D833AAF823844E5700F4BD30 /* UIViewBGCextension.swift in Sources */,
 				C21A22602305773E006E34AB /* AppDelegate.swift in Sources */,
+				D81EC4D0239418190045FCEB /* QRSdetector.swift in Sources */,
 				D833AAFA2387864C00F4BD30 /* styledTxt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
