@@ -1,24 +1,27 @@
 '''
 By Gilson Frías, Nov. 30 2019. 
 Script for compressing 11 bit resolution ECG signals. In order to be able to fit
-in the 30 minutes ECG recording into the ESP32 memory flash memory, this script 
-reduces the record size by 25% by storing the Most Significant Byte of two contiguous
+in the 30 minutes ECG recording into the ESP32 flash memory, this script 
+reduces the record size by 25% by storing the Most Significant Byte (MSB) of two contiguous
 samples in one shared byte. 
 
------- Uncompressed samples representation ------
-                 ('*' signify )
+              ------ Uncompressed samples representation ------
+                          ('*' signify unused bits)
 
-    SampleA Byte1           SampleA Byte0
-[* * * * * A10 A9 A8]   [A7 A6 A5 A4 A3 A2 A1 A0]
+                   SampleA Byte1           SampleA Byte0
+                [* * * * * A10 A9 A8]   [A7 A6 A5 A4 A3 A2 A1 A0]
 
-    SampleB Byte1           SampleB Byte0
-[* * * * * B10 B9 B8]   [B7 B6 B5 B4 B3 B2 B1 B0]
+                   SampleB Byte1           SampleB Byte0
+                [* * * * * B10 B9 B8]   [B7 B6 B5 B4 B3 B2 B1 B0]
 
-------- Compressed samples representation -------
-SharedByte = (SampleA Byte1) << 5 +  (SampleB Byte1)
-
+                ------- Compressed samples representation -------
     Sample A Byte 0                 SharedByte                Sample B Byte 0
 [A7 A6 A5 A4 A3 A2 A1 A0]   [A10 A9 A8 0 0 B10 B9 B8]    [B7 B6 B5 B4 B3 B2 B1 B0]
+
+In the compressed representation, a shared byte is defined by a shifting and addition of 
+the MSB of the samples according to
+
+                SharedByte = (SampleA Byte1) << 5 +  (SampleB Byte1)
 
 '''
 
